@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <style>
+        .dropdowncontainer {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .buttondropdown {
+            background-color: red;
+            /* border: 3px solid rgb(174, 8, 8); */
+            height: 40px;
+            width: 80px;
+            font-size: 20px;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 5px 5px 5px rgb(161, 2, 2) inset;
+            cursor: pointer;
+        }
+        
+        .payitems {
+            display: none;
+            position: absolute;
+        }
+        
+        .payitems a {
+            border-radius: 5px;
+            display: block;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 5px 8px;
+            /* margin: 4px; */
+            border: 2px solid black;
+            background-color: rgb(94, 88, 88);
+        }
+        
+        .dropdowncontainer:hover .payitems {
+            display: block;
+            /* text-decoration: underline; */
+        }
+        
+        .dropdowncontainer:hover .buttondropdown {
+            background-color: rgb(128, 19, 0)
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h3>Drop Down</h3>
+    <div class="dropdowncontainer">
+        <button class="buttondropdown">Pay</button>
+        <div class="payitems">
+            <a href="#">Credit Card</a>
+            <a href="#">Debit Card</a>
+            <a href="#">Payment</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Demo</title>
+    <style>
+        h2 {
+            border: 2px solid red;
+            background-color: black;
+            color: white;
+            margin: 8px;
+        }
+        
+        .containerflex {
+            height: 200px;
+            display: flex;
+            background-color: yellow;
+            flex-wrap: wrap-reverse;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            align-items: end;
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: stretch; */
+            /* align-items: baseline; */
+        }
+        /* #box {
+            height: 100px;
+            line-height: 50px;
+            margin: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="containerflex">
+        <h2 style="order: 1; flex-grow: 8;">flex box1</h2>
+        <h2 style="order: 7;">flex box2</h2>
+        <h2 style="order: 5;">flex box3</h2>
+        <h2 style="order: 3; flex-grow: 3;">flex box4</h2>
+        <h2 style="order: 2;">flex box5</h2>
+        <h2 style="order: 6;">flex box6</h2>
+        <h2 style="order: 4; flex-grow: 4;"><small>flex box7</small> </h2>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Demo</title>
+    <style>
+        #boxp1 {
+            border: 3px solid red;
+            width: 300px;
+            height: 200px;
+            padding: 5px;
+            /* display: inline; */
+            display: inline-block;
+        }
+        
+        #boxp2 {
+            border: 3px solid green;
+            width: 400px;
+            height: auto;
+            padding: 10px;
+            display: block;
+        }
+        
+        span.box {
+            border: 3px solid blue;
+            display: inline-block;
+            /* display: inline; */
+            /* padding: 5px; */
+            width: 150px;
+            height: 80px;
+        }
+        
+        span.blockbox {
+            border: 2px solid lawngreen;
+            width: 150px;
+            height: 80px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Inline Demo</h2>
+    <p id="boxp1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="box">Lorem ipsum</span> Nemo voluptatem explicabo ad suscipit repellat consequuntur minus sed ea commodi eos.</p>
+    <h2>Block Demo</h2>
+    <p id="boxp2">Lorem ipsum dolor sit amet consectetur adipisicing <span class="blockbox">Lorem, ipsum.</span> Sit numquam fuga
+        <span class="blockbox">Lorem, ipsum dolor.</span> cupiditate consequuntur autem aliquam saepe nulla recusandae reiciendis quod Lorem ipsum dolor sit amet.
+    </p>
+
+</body>
+
+</html>

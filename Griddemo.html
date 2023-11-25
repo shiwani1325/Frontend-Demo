@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Demo</title>
+    <style>
+        .ContainerGrid {
+            display: grid;
+            grid-template-columns: 200px 500px auto auto;
+            grid-template-rows: auto 200px auto 300px auto;
+            border: 2px solid yellow;
+            background-color: orange;
+            padding: 10px;
+            /* column-gap: 100px; */
+            /* row-gap: 100px; */
+            /* gap: 100px 200px; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: start; */
+            /* align-content: center; */
+            /* align-content: end; */
+            /* align-content: start; */
+            height: 1200px;
+        }
+        
+        .ContainerGrid div {
+            border: 2px solid red;
+            background-color: black;
+            color: white;
+            margin: 5px;
+            font-size: 25px;
+            text-align: center;
+            padding: 8px;
+        }
+        
+        .Gridbox1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        
+        .Gridbox6 {
+            grid-column-start: 3;
+            grid-column-end: 6;
+        }
+        
+        .Gridbox10 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        .Gridbox8 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <h2>Grid Demo</h2>
+    <div class="ContainerGrid">
+        <div class="Gridbox1">box1</div>
+        <div class="Gridbox2">box2</div>
+        <div class="Gridbox3">box3</div>
+        <div class="Gridbox4">box4</div>
+        <div class="Gridbox5">box5</div>
+        <div class="Gridbox6">box6</div>
+        <div class="Gridbox7">box7</div>
+        <div class="Gridbox8">box8</div>
+        <div class="Gridbox9">box4</div>
+        <div class="Gridbox10">box5</div>
+        <div class="Gridbox11">box6</div>
+        <div class="Gridbox12">box7</div>
+        <div class="Gridbox13">box8</div>
+    </div>
+</body>
+
+</html>

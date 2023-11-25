@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        form {
+            /* border: 2px solid black;
+           
+            margin: 10px 350px; */
+            text-align: left;
+            color: rgb(0, 0, 0);
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .box {
+            /* text-align: center; */
+        }
+        
+        h2 {
+            color: white;
+            font-size: 35px;
+        }
+        
+        div {
+            justify-content: center;
+            display: flex;
+            border: 3px solid white;
+            margin: 10px 350px;
+            background-color: cornflowerblue;
+            border-radius: 50px;
+        }
+        
+        input {
+            margin: 8px;
+            padding: 6px 10px;
+            border-radius: 5px;
+            /* background-color: rgb(204, 201, 201); */
+        }
+        
+        .submitbutton {
+            background-color: rgb(6, 168, 6);
+            border: 3px solid white;
+            border-radius: 5px;
+        }
+        
+        .resetbutton {
+            background-color: rgb(26, 69, 238);
+            border: 3px solid white;
+            border-radius: 5px;
+        }
+        
+        .submitbutton:hover {
+            background-color: darkgreen;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .resetbutton:hover {
+            background-color: rgb(8, 8, 145);
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form</h2>
+    <div class="box">
+        <form action="#">
+            <label for="name"><strong>Name</strong></label>
+            <br>
+            <input type="text" id="name">
+            <br>
+            <label for="num"><strong>Mob. Number</strong></label>
+            <br>
+            <input type="tel" id="num">
+            <br>
+            <label for="qun"><strong>Quantity</strong></label>
+            <br>
+            <input type="number" min="0" max="10" id="qun">
+            <br>
+            <label for=""><strong>Gender</strong></label>
+            <br>
+            <input type="radio" name="box" id="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="box" id="female">
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" name="box" id="others">
+            <label for="others">Others</label>
+
+            <br>
+            <label for=""><strong>Skills</strong></label>
+            <br>
+
+            <input type="checkbox">
+            <label for="">HTML</label>
+            <br>
+            <input type="checkbox">
+            <label for="">CSS</label>
+
+            <br>
+            <label for=""><strong>Password</strong></label>
+            <br>
+            <input type="password" id="password">
+            <br>
+            <label for=""><strong>Email</strong></label>
+            <br>
+            <input type="email">
+            <br>
+            <label for=""><strong>Date and Time</strong></label>
+            <br>
+            <input type="datetime-local">
+            <br>
+            <label for=""><strong>Week</strong></label>
+            <br>
+            <input type="week">
+            <br>
+            <!-- <label for=""><strong>Image</strong></label>
+            <input type="image" src="pexels-james-wheeler-1519088.jpg" width="300" height="200"> -->
+
+            <label for=""><strong>URL</strong></label>
+            <br>
+            <input type="url">
+            <br>
+            <label for=""><strong>File</strong></label>
+            <br>
+            <input type="file">
+            <br>
+            <label for="optionskills"><strong>Skills</strong></label>
+            <br>
+            <select name="" id="optionskills">
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">JAVA SCRIPT</option>
+                <option value="">PYTHON</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit Button" class="submitbutton">
+            <input type="reset" value="Reset Button" class="resetbutton">
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
